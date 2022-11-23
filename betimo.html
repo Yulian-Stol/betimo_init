@@ -189,7 +189,7 @@
             <div class='container'>
                         </div>
         </div>
-			<div class="swiper mySwiper">
+			<div class="swiper hm-slider">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<section class="bg-1-1-foto" data-bg-image="img/betimo/img-14.jpg">
@@ -1490,3 +1490,51 @@ if  ('') {
 }
 });</script>    </body>
     </html>
+
+
+    <!-- swiper slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.3/swiper-bundle.min.js"></script>
+    <script src="js/retina-1.3.0/retina.js"></script>
+    <script>
+        jQuery(function ($) {
+
+            $.fn.komunikat = function (rodzaj, tresc) {
+                var opcje = {
+                    'closeButton': true,
+                    'progressBar': true,
+                    'positionClass': 'toast-top-center',
+                    'timeOut': 10000,
+                    'extendedTimeOut': 15000,
+                    'preventDuplicates': true
+                };
+                if (rodzaj == 'success') {
+                    toastr.success(tresc, 'Informacja', opcje);
+                } else {
+                    toastr.error(tresc, 'Wystąpił błąd', opcje);
+                }
+            }
+
+            if ('') {
+                $.fn.komunikat('success', '');
+            }
+            if ('') {
+                $.fn.komunikat('error', '');
+            }
+        });
+        var firstSlide = Math.floor(Math.random() * 5 - 1);
+        console.log(firstSlide);
+        var swiper = new Swiper(".hm-slider", {
+            loop: true,
+            initialSlide: firstSlide,
+            effect: 'fade',  
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            fadeEffect: { crossFade: true },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
