@@ -1852,10 +1852,18 @@ i.icon-menu-foto {
   background-color: #8ec9e5 !important;
 }
 
+.swiper--up {
+	background-position: 0 40%;
+}
+
 @media (max-width: 992px) {
   .bg-1-1-foto {
 		background-size: 158%;
 		background-position: 97% -10%;
+	}
+
+	.swiper--up {
+		background-position-y: -25%;
 	}
 
 	.bg-1-1-foto h4 {
@@ -1869,6 +1877,10 @@ i.icon-menu-foto {
 		background-position: 87% -6%;
   }
 
+	.swiper--up {
+		background-position-y: -18%;
+	}
+
 	.bg-1-1-foto h1 {
 		font-size: 35px !important;
 	}
@@ -1879,6 +1891,10 @@ i.icon-menu-foto {
 		background-size: 210%;
 		background-position: 83% 2%;
   }
+
+	.swiper--up {
+		background-position-y: -10%;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1886,6 +1902,10 @@ i.icon-menu-foto {
 		background-size: 277%;
 		background-position: 77% 2%;
   }
+
+	.swiper--up {
+		background-position-y: -2%;
+	}
 }
 
 .bg-1-1-foto h4 {
@@ -2107,6 +2127,7 @@ i.icon-menu-foto {
   color: #00a0e3;
   line-height: 1.28;
   letter-spacing: -0.05px !important;
+	cursor: pointer;
 }
 
 .oferta-foto-more-text:hover {
