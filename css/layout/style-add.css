@@ -1,0 +1,128 @@
+.modal--win {
+	padding: 0;
+}
+
+.modal--title {
+	padding: 15px 20px 5px 20px;
+	display: flex;
+	font-size: 21px;
+	font-weight: 700;
+	gap: 20px;
+}
+
+.modal--main {
+	padding: 15px 35px;
+}
+
+.modal--main p {
+	margin-bottom: 50px;
+}
+
+.modal--btn {
+	background: #479EDD;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	margin-right: 15px;
+}
+
+.modal {
+	padding-right: 0 !important;
+}
+
+.modal--button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.modal--img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 80px;
+	margin-bottom: 15px;
+}
+
+.modal--img img {
+	flex-shrink: 0;
+	width: auto;
+	height: 100%;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination-bullet {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+.swiper-pagination {
+	margin-bottom: 10px;
+}
+
+.modal--gap {
+	gap: 150px;
+}
+
+.swiper--bg {
+	background-size: cover;
+}
+
+.banner--img img{
+	width: 100%;
+}
+
+.display--none {
+	display: none !important;
+}
+
+.display--block {
+	display: block !important;
+}
+
+.photo--row {
+	display: flex;
+}
+
+@media (max-width: 992px) {
+	.modal--width {
+		width: 100% !important;
+	}
+
+	.modal--main {
+		padding: 10px 20px;
+	}
+
+	.modal--img {
+		gap: 30px;
+	}
+
+	.display--none {
+		display: flex !important;
+	}
+
+	.display--block {
+		display: none !important;
+	}
+}
+
+@media (max-width: 576px) {
+	.modal--width {
+		width: 100% !important;
+	}
+
+	.modal--gap {
+		gap: 30px;
+	}
+
+	.padding--top {
+		/* padding-top: 70px !important; */
+	}
+}
